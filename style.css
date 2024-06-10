@@ -5,6 +5,11 @@
     margin: 0;
     padding: 0;
 }
+::selection {
+    background: #00A0E2;
+    
+    
+}
 .hero:nth-of-type(even) {
     background-color: black;
     border-radius: 5px;
