@@ -1,3 +1,4 @@
+
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
@@ -11,8 +12,8 @@
 .my-picture {
     background-color: white;
     border: 7px solid #00A0E2;
-    border-radius: 50%; /* This makes the image circular */
-    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 50%;
+    object-fit: cover;
 }
 .iconsContaner{
     display: flex;
@@ -78,12 +79,17 @@ h1, h2, h3, h4, h5 ,h6 {
     align-items: center;
     gap: 20px;
     padding: 10px;
-    right: -400px;
-    background-color: rgba(7, 233, 59, 0.753);
-    width: 100%;
-    max-width: 400px;
+    right: -53vw;
+    background-color: #081C29;
+    box-shadow: -10px 3px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    width: 50vw;
+    height: 100vh;
     transition: ease 1s;
     
+}
+.off-screen.active {
+	right: 0;
 }
 div {
     padding: 10px;
@@ -165,7 +171,9 @@ div {
     button.nav-button {
         display: none;
     }
-    
+    .off-screen {
+        display: none;
+    }
     
 }
 
@@ -188,5 +196,6 @@ div {
         width: 100%;
         max-width: 450px;
     }
+    
     
 }

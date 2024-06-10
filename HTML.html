@@ -30,18 +30,23 @@
                     <a href="#home">Home</a>
                     <a href="#About">About</a>
                     <a href="#skills">Skills</a>
-                    <a href="#projects">projects</a>
-                    <button class="nav-button">
+                    <a href="#Education">Education</a>
+                    <a href="#Experiance">Experiance</a>
+                    <a href="#projects">Projects</a>
+                    <button class="nav-button" onclick=showsidebar()>
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
                  </nav>
             </header>
-            <div class="off-screen">
-                <span>item1</span>
-                <span>item2</span>
-                <span>item3</span>
+            <div class="off-screen" onclick=showsidebar()>
+                <a href="#home">Home</a>
+                <a href="#About">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#Education">Education</a>
+                <a href="#Experiance">Experiance</a>
+                <a href="#projects">Projects</a>
             </div>
             <div class="hero" id="home">
                 <div class="contaner md">
@@ -56,7 +61,7 @@
                 <a type="btn" class="fa-brands fa-linkedin col col-md-12" href="https://www.linkedin.com/in/naser-alzaghari-4549a919a/" target="_blank"></a>
                 <a type="btn" class="fa-brands fa-github col col col-md-12" href="https://github.com/Naser-Alzaghari" target="_blank"></a>
                 <a type="btn" class="fa-solid fa-envelope col col col-md-12" href="mailto:naseralzaghari88@gmail.com" target="_blank"></a>
-                <a type="btn" class="fa-solid fa-file col col col-md-12" href="https://www.linkedin.com/in/naser-alzaghari-4549a919a/" target="_blank"></a>
+                <a type="btn" class="fa-solid fa-file col col col-md-12" href="NASER ALZAGHARI.pdf" target="_blank"></a>
 
             
             </div>
@@ -127,15 +132,57 @@
                 
                 </div>
             </div>
-            <div class="hero" style="">
-                <div class="headline">
-                    Education
-                </div>
-            </div>
-            <div class="hero" style="">
+            <div class="hero" id="Experiance">
                 <div class="headline">
                     Experiance
                 </div>
+				<selector class="contaner md">
+                    <div class="row align-content-center">
+                <div class="col-12 col-md align-self-center">
+                    <p>14/02/2021–present</p>
+                    <p class="headline" style="font-size: 20pt;">Authoring officer • junior • integrated Technology group (ITG)</p>
+                    <ul>
+                        <li>A data entry of books and LMS contents (converting books from hard into a soft copy).</li>
+                        <li>Teaching others how to design and format books professionally by using Photoshop, Adobe acrobat, Microsoft programs and Eduwave website.</li>
+                        <li>Tracking and reporting on overall progress.</li>
+                    </ul>
+                </div>
+            <div class="rightimage col-auto">
+                <img
+                    src="ITG_logo_2x.png"
+                    class="my-picture" style="width:130px; height:130px; background-color: white;"
+                    alt="pic"
+                />
+                
+            </div>
+            </div>
+            </selector>
+            </div>
+            <div class="hero" id="Education">
+                <div class="headline">
+                    Education
+                </div>
+                <selector class="contaner md">
+                    <div class="row align-content-center">
+                <div class="col-12 col-md align-self-center">
+                    <p>September 2017 — February 2021</p>
+                    <p class="headline" style="font-size: 20pt;">Al-Balqa Applied University, Al-Salt , Jordan</p>
+                    <ul>
+                        <li>Bachelor degree in computer science with a general average “very good” (3.37 out of 4)</li>
+                    </ul>
+                </div>
+            <div class="rightimage col-auto">
+                <img
+                    src="BAU.png"
+                    class="my-picture" style="width:130px; height:130px; background-color: white;"
+                    alt="pic"
+                    
+                />
+                
+            </div>
+            </div>
+            </selector>
+            
             </div>
             <div class="hero" id="projects">
                 <div class="headline">Projects</div>
@@ -148,7 +195,7 @@
                         <hr>
                     <div>
                         <ul>
-                            <li><a href="https://github.com/Naser-Alzaghari/Naser.git">Project repositories</a></li>
+                            <li><a href="https://github.com/Naser-Alzaghari/Naser.git" target="_blank">Project repositories</a></li>
                         </ul>
                     </div>
                     </div>
@@ -160,8 +207,8 @@
                         <hr>
                     <div>
                         <ul>
-                            <li><a href="https://github.com/Naser-Alzaghari/CSS-introduction.git">First Project repositories</a></li>
-                            <li><a href="https://github.com/Naser-Alzaghari/CSS-Task-2.git">Secound Project repositories</a></li>
+                            <li><a href="https://github.com/Naser-Alzaghari/CSS-introduction.git" target="_blank">First Project repositories</a></li>
+                            <li><a href="https://github.com/Naser-Alzaghari/CSS-Task-2.git" target="_blank">Secound Project repositories</a></li>
                         </ul>
                     </div>
                     </div>
@@ -173,8 +220,8 @@
                         <hr>
                     <div>
                         <ul>
-                            <li><a href="https://github.com/Naser-Alzaghari/bootstrap.git">First Project repositories</a></li>
-                            <li><a href="https://github.com/Naser-Alzaghari/bootstrap2.git">Secound Project repositories</a></li>
+                            <li><a href="https://github.com/Naser-Alzaghari/bootstrap.git" target="_blank">First Project repositories</a></li>
+                            <li><a href="https://github.com/Naser-Alzaghari/bootstrap2.git" target="_blank">Secound Project repositories</a></li>
                         </ul>
                     </div>
                     </div>
@@ -182,10 +229,11 @@
             </div>
             
         </main>
-        <footer>
-            <!-- place footer here -->
+        <footer class="row" style="text-align: center; background-color: black;">
+            <div class="col-4">Done by Naser Al-zaghari</div>
+            <div class="col-4">copyright © all rights reserved</div>
+            <div class="col-4"><a href="mailto:naseralzaghari88@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Send me an Email</a></div>
         </footer>
-        <div style="text-align: center;">All Rights reserved</div>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -197,5 +245,12 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+
+	<script>
+	function showsidebar(){
+        const sidebar=document.querySelector('.off-screen');
+        sidebar.classList.toggle('active');
+    }
+	</script>
     </body>
 </html>
